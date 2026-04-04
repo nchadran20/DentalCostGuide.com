@@ -1,0 +1,30 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[redirects]]
+  from = "/overbite"
+  to = "/how-to-fix-overbite.html"
+  status = 301
+
+[[redirects]]
+  from = "/chipped-tooth"
+  to = "/how-to-fix-chipped-tooth.html"
+  status = 301
+
+[[redirects]]
+  from = "/underbite"
+  to = "/how-to-fix-underbite.html"
+  status = 301
