@@ -84,7 +84,18 @@
     .footer-links a:hover{color:white;text-decoration:none;}
     .footer-bottom{max-width:1100px;margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);font-size:12px;}
     @media(max-width:768px){.page-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.nav-links{display:none;}}
-</style>
+
+    .footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;align-items:start;}
+    @media(max-width:768px){.footer-inner{grid-template-columns:1fr 1fr;}}
+    @media(max-width:480px){.footer-inner{grid-template-columns:1fr;}}
+    .footer-logo{font-family:var(--serif);font-size:18px;color:white;margin-bottom:10px;}
+    .footer-disclaimer{font-size:12px;line-height:1.7;color:rgba(255,255,255,0.4);}
+    .footer-col h4{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:14px;}
+    .footer-col ul{list-style:none;padding:0;margin:0;}
+    .footer-col li{margin-bottom:8px;}
+    .footer-col a{font-size:13px;color:rgba(255,255,255,0.6);}
+    .footer-col a:hover{color:white;text-decoration:none;}
+    </style>
   <meta name="google-adsense-account" content="ca-pub-6550783064044463">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6550783064044463" crossorigin="anonymous"></script>
 </head>
@@ -98,6 +109,7 @@
     <ul class="nav-links">
       <li><a href="/#procedures">Procedures</a></li>
       <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/blog.html">Articles</a></li>
       <li><a href="/about.html">About</a></li>
     </ul>
   </div>
@@ -161,15 +173,37 @@
   <div class="footer-inner">
     <div>
       <div class="footer-logo">Dental Cost Guide</div>
-      <p class="footer-disclaimer">DentalCostGuide.com provides general cost information for educational purposes only. We are not a dental clinic. Always consult a licensed dental professional for diagnosis and treatment.</p>
+      <p class="footer-disclaimer">DentalCostGuide.com provides general cost information for educational purposes only. We are not a dental clinic, and nothing on this site constitutes medical or dental advice. Always consult a licensed dental professional. Cost figures are US national averages. A NuNova Labs LLC property.</p>
     </div>
-    <ul class="footer-links">
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/privacy.html">Privacy policy</a></li>
-      <li><a href="/disclaimer.html">Disclaimer</a></li>
-    </ul>
+    <div class="footer-col">
+      <h4>Procedures</h4>
+      <ul>
+        <li><a href="/blog/root-canal-cost.html">Root Canal</a></li>
+        <li><a href="/blog/how-much-do-braces-cost.html">Braces</a></li>
+        <li><a href="/blog/invisalign-cost-guide.html">Invisalign</a></li>
+        <li><a href="/blog/dental-crown-cost.html">Dental Crown</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Articles</h4>
+      <ul>
+        <li><a href="/blog.html">All Articles</a></li>
+        <li><a href="/how-to-fix-overbite.html">Fix an Overbite</a></li>
+        <li><a href="/blog/root-canal-cost.html">Root Canal Guide</a></li>
+        <li><a href="/blog/how-much-do-braces-cost.html">Braces Guide</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="footer-bottom">&#169; 2026 DentalCostGuide.com &nbsp;&middot;&nbsp; A NuNova Labs property</div>
+  <div class="footer-bottom">© 2026 DentalCostGuide.com &nbsp;·&nbsp; A NuNova Labs property &nbsp;·&nbsp; All costs are estimates based on national averages and are not guarantees of price.</div>
 </footer>
 <script>
   document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const o=q.classList.contains('open');document.querySelectorAll('.faq-q').forEach(e=>{e.classList.remove('open');e.nextElementSibling.classList.remove('open');});if(!o){q.classList.add('open');q.nextElementSibling.classList.add('open');}});});
